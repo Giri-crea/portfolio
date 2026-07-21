@@ -31,14 +31,6 @@ const achievements = [
     tag: 'Project',
     tagColor: 'bg-purple-500/10 text-purple-500',
   },
-  {
-    icon: 'PresentationChartBarIcon',
-    title: 'Technical Presentations',
-    subtitle: 'College Symposiums',
-    desc: 'Presented technical papers on UI/UX trends and AI integration at multiple college-level technical symposiums in Tamil Nadu.',
-    tag: 'Achievement',
-    tagColor: 'bg-orange-500/10 text-orange-500',
-  },
 ];
 
 export default function AchievementsSection() {
