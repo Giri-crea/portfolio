@@ -33,6 +33,12 @@ const achievements = [
   },
 ];
 
+const filteredAchievements = achievements.filter(
+  (item) =>
+    item.title !== 'Technical Presentations' &&
+    item.subtitle !== 'College Symposiums'
+);
+
 export default function AchievementsSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
@@ -52,7 +58,7 @@ export default function AchievementsSection() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {achievements.map((item, i) => (
+          {filteredAchievements.map((item, i) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
