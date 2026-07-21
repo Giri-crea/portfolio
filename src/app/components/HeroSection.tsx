@@ -194,38 +194,6 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
             </div>
 
-            {/* Floating card: Tool indicator */}
-            <div className="floating-card absolute -top-6 -left-6 glass-card rounded-2xl p-4 shadow-card-hover border border-white/60">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xs font-600 text-foreground">Figma</p>
-                  <p className="text-xs text-muted-foreground">Designing now</p>
-                </div>
-                <span className="w-2 h-2 rounded-full bg-green-400 ml-1" />
-              </div>
-            </div>
-
-            {/* Floating card: Current frame */}
-            <div className="floating-card-delayed absolute -bottom-4 -right-6 glass-card rounded-2xl p-4 shadow-card-hover border border-white/60 max-w-[200px]">
-              <p className="text-xs text-muted-foreground mb-2">Current Frame</p>
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-6 h-6 rounded bg-primary/20 flex items-center justify-center">
-                  <span className="text-primary text-xs font-800">F</span>
-                </div>
-                <span className="text-sm font-600 text-foreground">Dashboard v3</span>
-              </div>
-              <div className="flex gap-1">
-                {['bg-primary', 'bg-accent', 'bg-purple-400', 'bg-pink-400'].map((c, i) =>
-                <div key={i} className={`w-5 h-5 rounded-full ${c}`} />
-                )}
-              </div>
-            </div>
-
             {/* Floating badge: Available */}
             <div className="absolute top-4 right-4 glass-card rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-card border border-white/60">
               <span className="w-2 h-2 rounded-full bg-green-400" />
