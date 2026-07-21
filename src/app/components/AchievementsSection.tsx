@@ -19,7 +19,7 @@ const achievements = [
     icon: 'AcademicCapIcon',
     title: 'NPTEL Certifications',
     subtitle: 'IIT & IISc Courses',
-    desc: 'Completed multiple NPTEL certifications in areas including Programming in Java and Cloud Computing from IIT institutes.',
+    desc: 'Completed multiple NPTEL certification in Digital Circuits.',
     tag: 'Certification',
     tagColor: 'bg-accent/10 text-accent',
   },
